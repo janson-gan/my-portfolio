@@ -27,6 +27,6 @@ Within the **Projects** section, I include:
 
 ## 📬 Contact
 Feel free to connect with me:
-- Email: [myemail@example.com](mailto:janson-gan@hotmail.com)
-- LinkedIn: [linkedin.com/in/myprofile](https://www.linkedin.com/in/jansongan/)
-- GitHub: [github.com/myusername](https://github.com/janson-gan)
+- Email: [janson-gan@hotmail.com](mailto:janson-gan@hotmail.com)
+- LinkedIn: [linkedin.com/in/jansongan](https://www.linkedin.com/in/jansongan/)
+- GitHub: [github.com/janson-gan](https://github.com/janson-gan)
