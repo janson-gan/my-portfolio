@@ -8,7 +8,7 @@
   <!-- Bootstrap CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <title>Janson Gan</title>
+  <title>Janson Gan Portfolio Website</title>
   <!--Index CSS-->
   <link rel="stylesheet" href="css/styles.css">
   <!-- Google font -->
@@ -19,148 +19,142 @@
     rel="stylesheet">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-offset="50" tabindex="0">
+
+  <nav id="topNav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Janson Gan Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project-intro">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#name-card">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <header id="home">
     <div id="bg-property">
       <div id="bg-left">
         <div id="my-identity">
           <h1>Hi! I'm <span id="name">Janson Gan</span>.</h1>
-          <h5 style="color: antiquewhite;">Aspiring data professional passionate about turning information into insights</h5>
-          <a href="#navbar"><button id="my-identity-btn">View About Me</button></a>
+          <h5 style="color: antiquewhite;">Creating technology that bridges data and software to empower people and
+            drive positive change
+          </h5>
+          <a href="#about-me"><button id="my-identity-btn">View About Me</button></a>
         </div>
       </div>
     </div>
   </header>
 
-  <section id="navbar">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#my-projects">My Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#main-footer">Contact Me</a>
-            </li>
-          </ul>
+  <section id="about-me">
+    <div id="my-image">
+      <figure>
+        <img src="images/my-image2.jpg" alt="my-image">
+      </figure>
+    </div>
+
+    <div id="intro">
+      <h2>About Me</h2>
+      <p>A software developer with a growing passion for data engineering. I’ve built full‑stack applications with
+        React, Node.js, and PostgreSQL, and recently completed a Junior Data Engineering bootcamp where I worked with
+        Python, SQL, and PySpark to design data pipelines and dashboards. I enjoy turning ideas into working
+        solutions, whether that’s a user‑friendly web app or a clean dataset ready for analysis. Most importantly, I
+        love building solutions that positively impact people's everyday lives
+      </p>
+    </div>
+  </section>
+
+  <section id="project-intro">
+    <h2>My Projects</h2>
+    <p>Here are some of my projects:</p>
+    <div class="container text-center">
+      <div class="row align-items-start" style="padding-top: 1.5rem;">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/webpage_project_image.jpg" style="height: 190px;" class="card-img-top" alt="my-image">
+            <div class="card-body" style="background-color: blanchedalmond;">
+              <h5 class="card-title" style="color: black;">React Webpage</h5>
+              <p class="card-text" style="color: black;">Some descriptions here.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-      </div>
-    </nav>
-      
-      <div id="about-me">
-        <div id="my-image">
-          <figure>
-            <img src="images/my-image2.jpg" alt="my-image">
-          </figure>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/etl_project_image.jpg" class="card-img-top" alt="my-image">
+            <div class="card-body" style="background-color: blanchedalmond;">
+              <h5 class="card-title" style="color: black;">Data ELT Process</h5>
+              <p class="card-text" style="color: black;">Some descriptions here.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
-       
-        <div id="intro">
-        <h2>About Me</h2>
-        <p>Motivated professional with hands-on experience in Python, SQL, and building data workflows.  
-          Working with datasets that required cleaning, organizing, and shaping them to support analysis and reporting. 
-          Strong attention-to-details and structured problem-solving skills are built during my previous role. 
-          Breaking down requirements, checking data for errors are my responsibilities to keep the projects moving. 
-          Now, looking forward to applying these technical and transferable skills in a data focused environment to 
-          streamline operations and also meaningful decisions-making.</p>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <img src="images/ai_project_image.jpg" class="card-img-top" alt="my-image">
+            <div class="card-body" style="background-color: blanchedalmond;">
+              <h5 class="card-title" style="color: black;">AI Agent</h5>
+              <p class="card-text" style="color: black;">Some descriptions here.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="my-projects">
- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mb-2 mb-lg-0 fs-5">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-me">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">My Resume</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#main-footer">Contact Me</a>
-            </li>
-          </ul>
+  <section id="name-card">
+    <div class="name-card card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="card-image col-md-4">
+          <img src="images/my-image2.jpg" class="img-fluid rounded-start" alt="my_image">
+        </div>
+        <div class="col-md-8">
+          <div class="name-card-body card-body">
+            <h5 class="name-card-title card-title">Janson Gan</h5>
+            <p class="name-card-text card-text">Software Developer | Data Engineering</p>
+            <div class="contact-info">
+              <a href="mailto:janson-gan@hotmail.com">janson-gan@hotmail.com</a>
+              <a href="https://linkedin.com/in/myprofile" target="_blank">LinkedIn</a>
+              <a href="https://github.com/myusername" target="_blank">GitHub</a>
+            </div>
+          </div>
         </div>
       </div>
-    </nav>
-      
-    <div id="project-intro">
-      <h2>My Projects</h2>
-      <p>Here are some of my recent data projects:</p>
-      <div class="container text-center">
-  <div class="row align-items-start" style="padding-top: 1.5rem;">
-    <div class="col">
-     <div class="card" style="width: 18rem;">
-  <img src="images/webpage_project_image.jpg" style="height: 190px;" class="card-img-top" alt="my-image">
-  <div class="card-body" style="background-color: blanchedalmond;">
-    <h5 class="card-title" style="color: black;">HTML Webpage</h5>
-    <p class="card-text" style="color: black;">Some descriptions here.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    <div class="col">
-    <div class="card" style="width: 18rem;">
-  <img src="images/etl_project_image.jpg" class="card-img-top" alt="my-image">
-  <div class="card-body" style="background-color: blanchedalmond;">
-    <h5 class="card-title" style="color: black;">Data ELT Process</h5>
-    <p class="card-text" style="color: black;">Some descriptions here.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-    <div class="col">
-     <div class="card" style="width: 18rem;">
-  <img src="images/ai_project_image.jpg" class="card-img-top" alt="my-image">
-  <div class="card-body" style="background-color: blanchedalmond;">
-    <h5 class="card-title" style="color: black;">AI Agent</h5>
-    <p class="card-text" style="color: black;">Some descriptions here.</p>
-     <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-  </div>
-</div>
     </div>
   </section>
 
 
-   <footer id="main-footer">
-  <p>&copy; <span id="year"></span> Janson Gan. All rights reserved.</p>
-  <p>
-    <a href="mailto:myemail@example.com">Email</a> |
-    <a href="https://www.linkedin.com/in/myprofile" target="_blank">LinkedIn</a> |
-    <a href="https://github.com/myusername" target="_blank">GitHub</a>
-  </p>
-</footer>
+
+  <footer id="main-footer">
+    <p>&copy; <span id="year"></span> Janson Gan. All rights reserved.</p>
+    <!-- <p>
+      <a href="mailto:myemail@example.com">Email</a> |
+      <a href="https://www.linkedin.com/in/myprofile" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/myusername" target="_blank">GitHub</a>
+    </p> -->
+  </footer>
+
   <!-- Bootstrap JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-<script src="js/script.js"></script>
+    </script>
+  <script src="js/script.js"></script>
 
 </body>
 

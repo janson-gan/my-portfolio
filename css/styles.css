@@ -1,150 +1,228 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-    color: antiquewhite;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: antiquewhite;
 }
 
 nav {
-    border-bottom: 5px solid #f5d10d;
+  border-bottom: 5px solid #f5d10d;
 }
 
 .navbar-nav {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .nav-item {
-    margin-right: 4rem;
+  margin-right: 4rem;
 }
 
 .nav-item > a {
-    color: #ffffff!important;
+  color: #ffffff !important;
 }
 
 .nav-item > a:hover {
-    color: #f5d10d!important;
-    font-weight: 900;
+  color: #f5d10d !important;
+  font-weight: 900;
+}
+
+.nav-item > a:active {
+  color: #000000 !important;
+  background-color: #f5d10d !important;
+  font-weight: 900;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #f5d10d !important; /* your accent color */
+  border-bottom: 2px solid #f5d10d;
 }
 
 #bg-property {
-    background-image: url("../images/main_image_2.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url("../images/main_image_2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #bg-left {
-    max-width: 100%;
-    height: 100vh;
-    background-color: #000000;
-    opacity: 0.85;
+  max-width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  opacity: 0.85;
 }
 
 #my-identity {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30vh;
 }
 
 #my-identity-btn {
-    border: 1px solid #f5d10d;
-    background-color: transparent;
-    padding: .5rem 2rem;
-    font-size: 18px;
-    color: #ffffff;
-    margin-top: 1rem;
+  border: 1px solid #f5d10d;
+  background-color: transparent;
+  padding: 0.5rem 2rem;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 1rem;
 }
 
 #my-identity-btn:hover {
-    color: #000000;
-    background-color: #f5d10d;
-    border: 1px solid #000000;
-    font-weight: 900;
+  color: #000000;
+  background-color: #f5d10d;
+  border: 1px solid #000000;
+  font-weight: 900;
 }
 
 #my-identity > h1 {
-   font-family: "Roboto", sans-serif;
-   font-weight: 100;
-   letter-spacing: 3px;
-   color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #ffffff;
 }
 
 #my-identity > h2 {
-    font-family: monospace, sans-serif;
-    color: #ffffff;
+  font-family: monospace, sans-serif;
+  color: #ffffff;
 }
 
 #my-identity > h1 #name {
-    background-color: #f5d10d;
-    color: #000000;
-    font-weight: 900;
-    padding: 0 10px;
-    border-radius: 3px;
+  background-color: #f5d10d;
+  color: #000000;
+  font-weight: 900;
+  padding: 0 10px;
+  border-radius: 3px;
 }
 
 #about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem 15rem;
-    width: 100%;
-    height:100vh;
-    background-color: #353535;
-    color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 15rem;
+  width: 100%;
+  height: 100vh;
+  background-color: #353535;
+  color: #ffffff;
 }
 
 #my-image {
-    max-width: 22rem;
+  max-width: 22rem;
 }
 
 #my-image > figure > img {
-    width: 100%;
-    border-radius: 50%;
-    border: 8px solid #f5d10d;
-    box-shadow: 0 4px 200px;
+  width: 100%;
+  border-radius: 50%;
+  border: 8px solid #f5d10d;
+  box-shadow: 0 4px 200px;
 }
 
 #intro {
-    padding: 3rem;
+  padding: 3rem;
 }
 
 #my-projects {
-    background-color: #f5d10d;
-    height: 100vh;
+  background-color: #f5d10d;
+  height: 100vh;
 }
 
 #project-intro {
-    text-align: center;
-     background-color: #353535;
-     width: 100%;
-     height: 100vh;
-     padding: 2rem 15rem;
+  text-align: center;
+  background-color: #272727;
+  width: 100%;
+  height: 100vh;
+  padding: 7.5rem 15rem;
+}
+
+#name-card {
+  background-color: #494949;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 10px #000000;
+}
+
+.name-card {
+  background-color: #ece2aa;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.name-card:hover {
+  transform: translateY(-5px);
+}
+
+.name-card-body {
+  padding: 5rem 1.5rem;
+}
+
+.name-card-body > p {
+  margin-top: -0.5rem;
+}
+
+.card-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name-card-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #303030;
+  margin-bottom: 0.5rem;
+}
+
+.name-card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #060606;
+}
+
+.contact-info {
+  margin-top: 2rem;
+}
+
+.contact-info a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #430df5;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #3112cb;
+  text-decoration: underline;
 }
 
 #main-footer {
-    background-color: #222222;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem 0;
+  background-color: #222222;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 @media (max-width: 468px) {
-    #my-identity > h1 {
-        font-size: 22px;
-    }
+  #my-identity > h1 {
+    font-size: 22px;
+  }
 
-    #about-me {
-        flex-direction: column;
-        padding: 1rem;
-    }
+  #about-me {
+    flex-direction: column;
+    padding: 1rem;
+  }
 
-    #intro {
-        flex-basis: 100%;
-        padding: 1rem;
-    }
-    figure > img {
-        margin-left:  4.5rem;
-    }
+  #intro {
+    flex-basis: 100%;
+    padding: 1rem;
+  }
+  figure > img {
+    margin-left: 4.5rem;
+  }
 }
