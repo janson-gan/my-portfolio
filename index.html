@@ -17,6 +17,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&family=Lato:wght@100&family=Montserrat:wght@100;300;400;700&family=Playfair+Display:ital,wght@1,648&family=Roboto+Slab:wght@600&family=Roboto:wght@100&display=swap"
     rel="stylesheet">
+  <!-- Font awesome icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#topNav" data-bs-offset="50" tabindex="0">
@@ -37,7 +40,9 @@
             <a class="nav-link" href="#project-intro">My Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://janson-gan.github.io/my-portfolio/resume/Gan_Boon_Chai_Janson.pdf">My
+            <!-- Open a new window "noopener": prevent new page from accessing window.opener "noreferrer": prevent browser tracking original site (privacy)-->
+            <a class="nav-link" target="_blank" rel="noopener noreferrer"
+              href="https://janson-gan.github.io/my-portfolio/resume/Gan_Boon_Chai_Janson.pdf">My
               Resume</a>
           </li>
           <li class="nav-item">
@@ -52,7 +57,7 @@
     <div id="bg-property">
       <div id="bg-left">
         <div id="my-identity">
-          <h1>Hi! I'm <span id="name">Janson Gan</span>.</h1>
+          <h1>Hi! I'm <span id="name">Janson Gan</span></h1>
           <h5 style="color: antiquewhite;">Creating technology that bridges data and software to empower people and
             drive positive change
           </h5>
@@ -75,7 +80,7 @@
         React, Node.js, and PostgreSQL, and recently completed a Junior Data Engineering bootcamp where I worked with
         Python, SQL, and PySpark to design data pipelines and dashboards. I enjoy turning ideas into working
         solutions, whether that’s a user‑friendly web app or a clean dataset ready for analysis. Most importantly, I
-        love building solutions that positively impact people's everyday lives
+        love building solutions that positively impact people's everyday lives.
       </p>
     </div>
   </section>
@@ -91,7 +96,7 @@
             <div class="card-body" style="background-color: blanchedalmond;">
               <h5 class="card-title" style="color: black;">React Webpage</h5>
               <p class="card-text" style="color: black;">Some descriptions here.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-warning" style="font-weight: bold;">View</a>
             </div>
           </div>
         </div>
@@ -101,7 +106,7 @@
             <div class="card-body" style="background-color: blanchedalmond;">
               <h5 class="card-title" style="color: black;">Data ELT Process</h5>
               <p class="card-text" style="color: black;">Some descriptions here.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-warning" style="font-weight: bold;">View</a>
             </div>
           </div>
         </div>
@@ -111,7 +116,7 @@
             <div class="card-body" style="background-color: blanchedalmond;">
               <h5 class="card-title" style="color: black;">AI Agent</h5>
               <p class="card-text" style="color: black;">Some descriptions here.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <a href="#" class="btn btn-warning" style="font-weight: bold;">View</a>
             </div>
           </div>
         </div>
@@ -120,26 +125,26 @@
   </section>
 
   <section id="name-card">
-    <div class="name-card card mb-3" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="card-image col-md-4">
-          <img src="images/my-image2.jpg" class="img-fluid rounded-start" alt="my_image">
-        </div>
-        <div class="col-md-8">
-          <div class="name-card-body card-body">
-            <h5 class="name-card-title card-title">Janson Gan</h5>
-            <p class="name-card-text card-text">Software Developer | Data Engineering</p>
-            <div class="contact-info">
-              <a href="mailto:janson-gan@hotmail.com">janson-gan@hotmail.com</a>
-              <a href="https://linkedin.com/in/myprofile" target="_blank">LinkedIn</a>
-              <a href="https://github.com/myusername" target="_blank">GitHub</a>
+    <div class="name-card" style="width: 35rem; height: 20rem;">
+      <div class="name-card-layer">
+        <div class="name-card-body">
+          <h5 class="name-card-title">Janson Gan</h5>
+          <h6 class="name-card-subtitle">Software Developer | Data Engineering</h6>
+          <p class="name-card-text">"From Web App to Data Pipeline, Creating Technology that Improves People's Lives"
+          </p>
+          <div class="contact-info">
+            <div><span><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></span><a
+                href="mailto:janson-gan@hotmail.com">janson-gan@hotmail.com</a></div>
+            <div><span><i class="fa-brands fa-linkedin fa-lg" aria-hidden="true"></i></span><a
+                href="https://www.linkedin.com/in/jansongan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
+            <div><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><a href="https://github.com/janson-gan"
+                target="_blank" rel="noopener noreferrer">GitHub</a></div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
 
 
   <footer id="main-footer">
