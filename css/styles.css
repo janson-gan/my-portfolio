@@ -140,6 +140,10 @@ a:active {
   color: #66fcf1;
 }
 
+.active {
+  color: #66fcf1;
+}
+
 .top-nav .menu-icon {
   display: block;
 }
