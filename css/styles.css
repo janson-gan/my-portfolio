@@ -445,6 +445,31 @@ footer {
   padding-top: 0.5rem;
 }
 
+/* HDB Resale */
+.hdb-pipeline-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  background-color: rgba(101, 101, 101, 0.3);
+  border-radius: 0.5rem;
+}
+
+.hdb-pipeline-image img {
+  width: 100%;
+}
+
+.hdb-pipeline-image a {
+  font-size: 1rem;
+}
+
+.hdb-pipeline-image a:hover {
+  color: blue;
+}
+
 /* Tablet font adjustments */
 @media (min-width: 768px) {
   h1 {
@@ -531,6 +556,10 @@ footer {
     flex-direction: row;
     justify-content: center;
   }
+
+   .hdb-pipeline-image {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -593,5 +622,9 @@ footer {
 
   .project-landscape-image {
     width: 600px;
+  }
+
+   .hdb-pipeline-image {
+    width: 60%;
   }
 }
