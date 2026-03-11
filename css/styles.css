@@ -70,6 +70,17 @@ a {
   list-style-type: none;
 }
 
+a:hover {
+  color: #66fcf1;
+}
+
+.list {
+  padding-left: 1.5rem;
+}
+.list li {
+  list-style: circle;
+}
+
 /* Small text / captions */
 small,
 .caption {
@@ -404,13 +415,6 @@ footer {
   margin-top: 1.5rem;
 }
 
-.portfolio-list {
-  padding-left: 1rem;
-}
-.portfolio-list li {
-  list-style: circle;
-}
-
 .highlight-image-container {
   display: flex;
   flex-direction: column;
@@ -470,8 +474,36 @@ footer {
   font-size: 1rem;
 }
 
-.hdb-pipeline-image a:hover {
-  color: blue;
+/* Elderly Checkin */
+.st-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.st-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem auto;
+  padding: 1rem 1rem 0.5rem;
+  overflow: hidden;
+  max-width: 90%;
+  background-color: rgba(101, 101, 101, 0.3);
+  border-radius: 0.5rem;
+}
+
+.st-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.st-image a {
+  text-align: center;
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 /* Tablet font adjustments */
@@ -577,6 +609,16 @@ footer {
   .hdb-pipeline-image {
     width: 80%;
   }
+
+  .st-image-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .st-image {
+    width: 800px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -643,5 +685,9 @@ footer {
 
   .hdb-pipeline-image {
     width: 60%;
+  }
+
+  .st-image {
+    width: 600px;
   }
 }
