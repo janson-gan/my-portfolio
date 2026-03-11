@@ -9,9 +9,8 @@
 /* To use custom font */
 @font-face {
   font-family: "Roboto";
-  src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+  src: url("../../fonts/Roboto-Thin.ttf") format("truetype");
   font-weight: normal;
-  font-size: normal;
 }
 
 html,
