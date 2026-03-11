@@ -394,7 +394,10 @@ footer {
 /* Portfolio */
 .portfolio-flex {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 1.5rem;
+  overflow: hidden;
 }
 
 .portfolio-title {
@@ -415,43 +418,35 @@ footer {
   margin-top: 1rem;
 }
 
-.project-mobile-image {
+.project-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 300px;
-  padding: 1rem;
-  margin: 0 auto;
+  margin: 1rem auto;
   overflow: hidden;
+  max-width: 90%;
 }
 
-.project-mobile-image img {
-  border: 0.5px solid #434343;
+.project-mobile-image {
+  width: 300px;
 }
 
 .project-landscape-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 400px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 1rem;
+  width: 500px;
 }
 
-.project-landscape-image img {
-  border: 0.5px solid #434343;
-}
-
-.project-highlight img {
-  max-width: 100%;
+.project-image img {
+  width: 100%;
   height: auto;
   display: block;
+  border: 0.5px solid #434343;
+  border-radius: 4px;
 }
 
 .highlight-image-container .desc {
   text-align: center;
   padding-top: 0.5rem;
+  font-size: 0.9rem;
 }
 
 /* HDB Resale */
@@ -553,7 +548,7 @@ footer {
   .about-icon {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2rem;
   }
 
@@ -576,6 +571,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 1rem;
   }
 
   .hdb-pipeline-image {
@@ -633,12 +629,8 @@ footer {
     flex: 1 1 45%;
   }
 
-  .highlight-image-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10rem;
+  .project-image {
+    margin: 0 2rem;
   }
 
   .project-mobile-image {
