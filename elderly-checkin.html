@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Janson Gan Portfolio Website</title>
+</head>
+
+<body>
+    <nav id="topNav" class="top-nav">
+        <div class="nav-logo">
+            <h1>Janson Gan Portfolio</h1>
+        </div>
+        <ul class="nav-ul">
+            <li><a href="index.html">Home</a></li>
+            <li><a target="_blank" href="https://janson-gan.github.io/my-portfolio/resume/Gan_Boon_Chai_Janson.pdf"
+                    rel="noopener noreferrer">Resume</a></li>
+        </ul>
+        <div class="menu-icon"><a href="javascript:(0)" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a></div>
+    </nav>
+
+    <section id="portfolio" class="portfolio-flex">
+        <div class="portfolio-container">
+            <h4 class="portfolio-title">Elderly Checkin System <span style="font-size: 1rem;">(Work in progress)</span></h4>
+            <h5 style="margin-top: 0.5rem;">The Problem</h5>
+            <p>
+                Singapore is one of the fastest-ageing countries in the world. Many elderly people live alone, some have
+                family members who are too busy to provide regular support, while others have no famiy at all. This
+                often leads to ongoing worry about their wellbeing when staying alone. A missed phone call or a day
+                without contact can cause unnecessary panic, or worse, go entirely unnoticed.
+            </p>
+            <div class="st-image-container">
+                <div class="st-image">
+                    <img src="images/st_sg_aging.png" alt="Elderly image">
+                    <a href="https://www.straitstimes.com/opinion/singapore-crosses-the-super-aged-threshold-in-2026-can-its-health-system-cope"
+                        target="_blank" rel="noopener noreferrer">Link to Straits Times Article</a>
+                </div>
+                <div class="st-image">
+                    <img src="images/st_sg_aging_2.png" alt="Neighbours checkin image">
+                    <a href="https://www.straitstimes.com/singapore/community/seniors-checking-in-on-neighbours-how-groups-are-preventing-lonely-deaths-among-spores-elderly"
+                        target="_blank" rel="noopener noreferrer">Link to Straits Times Article</a>
+                </div>
+            </div>
+
+            <h5 style="margin-top: 0.5rem;">The Solution</h5>
+            <p>
+                This Elderly Checkin System is a full-stack web application designed to give seniors independence while
+                giving families peace of mind. Seniors check in once daily through a simple, large button interface
+                designed specifically for older users. If a check-in is missed, the system automatically a;erts the
+                family, no manual monitoring required.
+            </p>
+            <h5 style="margin-top: 2rem;">Who Is This For</h5>
+            <ul class="list">
+                <li>Seniors living alone in Singapore who want to maintain their independence.</li>
+                <li>Family members who want reassurance without being intrusive</li>
+                <li>Community organizations and senior living facilities managing multiple residents</li>
+            </ul>
+            <h5 style="margin-top: 2rem;">What It Does</h5>
+            <p>
+                Seniors log in every morning and complete a simple check-in, indicating how they feel, good, okay, or
+                unwell. If a check-in is missed pass a configurable grace period, family members receive an automatic
+                email alert. Family members have their own dashboard to view the check-in history, manage emergency
+                contacts, and monitoring their loved one's wellness streak. Administrators can oversee all registered
+                seniors on the platform.
+            </p>
+            <h5 style="margin-top: 2rem;">Why I Built This</h5>
+            <p>
+                As someone re-entering the tech industry after a career break, I wanted to build something that can
+                solve a real problem close to home. Singapore's eldercare challenge is very personal, many of us have
+                parents or grandparents living alone, we ourselve will eventually grow old one day. This project gave me
+                an opportunity to apply full-stack development skills in a meaningful context, while demonstrating my
+                ability to think about the real users, not just code.
+            </p>
+            <h4 class="portfolio-title">Teck Stack</h4>
+            <ul class="list">
+                <li>React</li>
+                <li>Typescript</li>
+                <li>Node,js</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-flex">
+            <a href="https://www.linkedin.com/in/jansongan" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>LinkedIn</a> |
+            <a href="https://github.com/janson-gan" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>GitHub</a>
+            <p class="copyright">&copy; <span id="year"></span> Janson Gan. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+
+</html>
