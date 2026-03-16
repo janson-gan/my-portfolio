@@ -28,12 +28,9 @@ const mouseClick = (e) => {
   e;
 };
 
-// Display thank you message after contact form is submitted
-const form = document.getElementById("contact-form");
-const tkMessage = document.getElementById("tk-message");
-
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  form.style.display = "none";
-  tkMessage.style.display = "block";
+window.addEventListener("load", function () {
+  const form = document.getElementById("contact-form");
+  if (form) {
+    form.reset();
+  }
 });
